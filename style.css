@@ -1,0 +1,341 @@
+/* ---------------------- */
+/* PREMIUM DARK BACKGROUND */
+/* ---------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(140deg, #051f14, #0a3325, #051f14);
+    background-size: 300% 300%;
+    animation: bgMove 15s ease infinite;
+    color: white;
+}
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #1fffa8;
+    text-shadow: 0 0 10px rgba(0,255,150,0.4);
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+/* Particle container */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Individual particles */
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0,255,150,0.5);
+    border-radius: 50%;
+    animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 0.7; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+/* Ripple effect */
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    animation: none;
+}
+
+button:active::after {
+    left: var(--ripple-x);
+    top: var(--ripple-y);
+    animation: ripple 0.5s ease-out;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(25);
+        opacity: 0;
+    }
+}
+
+/* Background animation */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------------------- */
+/* ANIMATED PREMIUM NAVBAR */
+/* ---------------------- */
+/* Animated navbar entrance */
+.nav {
+    width: 84%;
+    height: 65px;
+    background: rgba(15, 61, 45, 0.8);
+    color: #1fffa8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur;
+
+    /* smooth transitions */
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+    animation: navbarDrop 0.7s ease forwards;
+    opacity: 0;
+    transform: translateY(-25px);
+}
+
+/* navbar entry animation */
+@keyframes navbarDrop {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.side-menu {
+    transition: right 0.4s ease, background 0.3s ease;
+}
+/* Slide-down animation */
+@keyframes navbarSlide {
+    from { top: -80px; }
+    to { top: 0px; }
+}
+
+/* Logo & Title */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #1fffa8;
+}
+
+.nav-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1fffa8;
+    text-shadow: 0 0 10px rgba(0,255,150,0.5);
+}
+
+/* Menu button */
+.nav-menu-btn {
+    font-size: 30px;
+    color: #1fffa8;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0,255,150,0.5);
+}
+
+/* ----------------------- */
+/* SLIDING SIDE MENU */
+/* ----------------------- */
+.side-menu {
+    width: 240px;
+    height: 100%;
+    background: rgba(10, 45, 33, 0.95);
+    position: fixed;
+    top: 0;
+    right: -260px;
+    transition: 0.4s ease;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    box-shadow: -4px 0 20px rgba(0,0,0,0.5);
+}
+
+.side-menu a {
+    padding: 18px 25px;
+    color: #baffea;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: 0.2s;
+}
+
+.side-menu a:hover {
+    background: rgba(0,255,120,0.1);
+}
+
+/* ----------------------- */
+/* MAIN CONTAINER ROUNDED  */
+/* ----------------------- */
+.page {
+    padding-top: 100px;
+}
+
+.container {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 25px; /* Rounded premium */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,255,140,0.1);
+    border: 1px solid rgba(0,255,150,0.3);
+    margin: auto;
+}
+
+/* Logo inside container */
+.logo img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid #1fffa8;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0,255,150,0.3);
+}
+
+/* Titles */
+.title {
+    text-align: center;
+    color: #1fffa8;
+    font-size: 30px;
+    margin-bottom: -5px;
+    text-shadow: 0 0 10px rgba(0,255,150,0.4);
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaffdd;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #eafff3;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #1fffa8;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+}
+
+/* BUTTON PREMIUM */
+button {
+    width: 100%;
+    background: #1fffa8;
+    color: black;
+    padding: 14px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,255,150,0.5);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,255,150,0.6);
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    padding: 18px;
+    background: rgba(0,255,140,0.1);
+    border-radius: 12px;
+    border-left: 5px solid #1fffa8;
+    backdrop-filter: blur(5px);
+    color: #dbffe8;
+    display: none;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background: rgba(10,45,33,0.8);
+    color: #1fffa8;
+    border-top: 2px solid rgba(0,255,150,0.4);
+    backdrop-filter: blur(8px);
+    margin-top: 30px;
+}
+/* PAGE TRANSITION BASE */
+.page-transition {
+    animation: swipeIn 0.5s ease forwards;
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+/* SWIPE-IN ANIMATION */
+@keyframes swipeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(40px); /* slide from right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* SWIPE-OUT ANIMATION (for next page) */
+.page-exit {
+    animation: swipeOut 0.5s ease forwards;
+}
+
+@keyframes swipeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-40px); /* exit left */
+    }
+}
