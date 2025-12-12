@@ -1,0 +1,223 @@
+{
+  "rose": {
+    "hot": {
+      "disease": "Red Mites",
+      "action": "Neem oil spray; Remove infected parts"
+    },
+    "cold": {
+      "disease": "Black Spot",
+      "action": "Neem oil spray"
+    },
+    "humid": {
+      "disease": "Black Spot Disease",
+      "action": "Neem oil spray"
+    }
+  },
+
+  "mango": {
+    "hot": {
+      "disease": "Leaf Scorch",
+      "action": "Deep watering"
+    },
+    "cold": {
+      "disease": "Sooty Mold",
+      "action": "Wash leaves with clean water"
+    },
+    "humid": {
+      "disease": "Black Spot",
+      "action": "Garlic spray"
+    }
+  },
+
+  "tomato": {
+    "hot": {
+      "disease": "Blossom End Rot",
+      "action": "Crushed eggshell"
+    },
+    "cold": {
+      "disease": "Early Blight",
+      "action": "Garlic spray"
+    },
+    "humid": {
+      "disease": "Late Blight",
+      "action": "Baking soda + soap spray"
+    },
+    "extra_hot": {
+      "disease": "White Flies",
+      "action": "Neem oil spray"
+    },
+    "extra_cold": {
+      "disease": "Damping Off",
+      "action": "Cinnamon powder on soil"
+    },
+    "extra_humid": {
+      "disease": "Bacterial Wilt",
+      "action": "Garlic spray"
+    }
+  },
+
+  "banana": {
+    "hot": {
+      "disease": "Leaf Spot",
+      "action": "Neem seed extract spray"
+    },
+    "cold": {
+      "disease": "Root Rot",
+      "action": "Trichoderma in soil"
+    },
+    "humid": {
+      "disease": "Leaf Spot",
+      "action": "Turmeric water spray"
+    },
+    "extra_hot": {
+      "disease": "Bunchy Top",
+      "action": "Trichoderma in soil"
+    },
+    "extra_cold": {
+      "disease": "Stem Wilt",
+      "action": "Cow dung filtrate spray"
+    },
+    "extra_humid": {
+      "disease": "Panama Wilt",
+      "action": "Trichoderma in soil"
+    }
+  },
+
+  "coconut": {
+    "hot": {
+      "disease": "Bud Rot",
+      "action": "Turmeric paste"
+    },
+    "cold": {
+      "disease": "Root Stress",
+      "action": "Compost tea"
+    },
+    "humid": {
+      "disease": "Leaf Blight",
+      "action": "Turmeric paste"
+    }
+  },
+
+  "papaya": {
+    "hot": {
+      "disease": "Leaf Curl Virus",
+      "action": "Neem + chilli spray"
+    },
+    "cold": {
+      "disease": "Root Rot",
+      "action": "Trichoderma in soil"
+    },
+    "humid": {
+      "disease": "Anthracnose",
+      "action": "Neem oil spray"
+    }
+  },
+
+  "lemon": {
+    "hot": {
+      "disease": "Leaf Miner",
+      "action": "Neem oil spray"
+    },
+    "cold": {
+      "disease": "Greening Symptoms",
+      "action": "Compost tea"
+    },
+    "humid": {
+      "disease": "Citrus Canker",
+      "action": "Turmeric spray"
+    },
+    "extra_hot": {
+      "disease": "Leaf Drop",
+      "action": "Turmeric water spray"
+    },
+    "extra_cold": {
+      "disease": "Greasy Spot",
+      "action": "Neem oil spray"
+    },
+    "extra_humid": {
+      "disease": "Canker",
+      "action": "Cow dung filtrate"
+    }
+  },
+
+  "guava": {
+    "hot": {
+      "disease": "Fruit Fly",
+      "action": "Neem seed extract"
+    },
+    "cold": {
+      "disease": "Dieback",
+      "action": "Turmeric paste"
+    },
+    "humid": {
+      "disease": "Anthracnose",
+      "action": "Baking soda spray"
+    },
+    "extra_hot": {
+      "disease": "Leaf Scorch",
+      "action": "Mulching"
+    },
+    "extra_cold": {
+      "disease": "Canker",
+      "action": "Neem seed extract"
+    },
+    "extra_humid": {
+      "disease": "Fruit Rot",
+      "action": "Neem seed extract"
+    }
+  },
+
+  "chilli": {
+    "hot": {
+      "disease": "Mites",
+      "action": "Soap water spray"
+    },
+    "cold": {
+      "disease": "Damping Off",
+      "action": "Soil solarization"
+    },
+    "humid": {
+      "disease": "Leaf Spot",
+      "action": "Garlic spray"
+    },
+    "extra_hot": {
+      "disease": "Leaf Curl",
+      "action": "Neem oil spray"
+    },
+    "extra_cold": {
+      "disease": "Leaf Curl",
+      "action": "Neem oil spray"
+    },
+    "extra_humid": {
+      "disease": "Root Rot",
+      "action": "Trichoderma in soil"
+    }
+  },
+
+  "curry_leaf": {
+    "hot": {
+      "disease": "Sooty Mold",
+      "action": "Neem oil spray"
+    },
+    "cold": {
+      "disease": "Root Rot",
+      "action": "Compost + cow dung mix"
+    },
+    "humid": {
+      "disease": "Leaf Spot",
+      "action": "Lemon peel spray"
+    },
+    "extra_hot": {
+      "disease": "Leaf Burn",
+      "action": "Neem oil spray"
+    },
+    "extra_cold": {
+      "disease": "Yellowing Stress",
+      "action": "Garlic spray"
+    },
+    "extra_humid": {
+      "disease": "Sooty Mold",
+      "action": "Lemon peel extract spray"
+    }
+  }
+}
