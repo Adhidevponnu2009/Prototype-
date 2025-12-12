@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>  <!-- Tailwind CSS -->  <script src="https://cdn.tailwindcss.com"></script>  <style>
+    body {
+      background: radial-gradient(circle at top, #111, #000);
+      color: #e5e5e5;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Glassmorphism */
+    .glass {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Floating Animation */
+    .float {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* Neon Glow */
+   
+
+    /* Gradient Animation */
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .gradient-bg {
+      background: linear-gradient(120deg, #00f2ff, #0077ff, #5a00ff);
+      background-size: 300% 300%;
+      animation: gradientMove 8s ease infinite;
+    }
+
+    /* Popup */
+    #successPopup {
+      transition: opacity 0.3s ease;
+    }
+  </style></head><body class="min-h-screen flex flex-col items-center justify-start p-6 relative">  <!-- HEADER WITH OFFICIAL LOGO -->  <header class="w-full max-w-6xl fixed top-4 z-50 flex items-center justify-between mb-8 p-4 bg-[#0f0f0f] glass rounded-2xl border border-gray-800">
+    <div class="flex items-center gap-3">
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#00eaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rounded-lg">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+        <path d="M2 17l10 5 10-5"></path>
+        <path d="M2 12l10 5 10-5"></path>
+      </svg>
+      <h1 class="text-2xl font-bold text-cyan-400">DOOMSDAY</h1>
+    </div><nav class="hidden md:flex gap-6 text-gray-300 text-lg">
+  <a href="#" class="relative group">Home
+    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#" class="relative group">About
+    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#" class="relative group">Services
+    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="#" class="relative group">Contact
+    <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+</nav>
+
+<!-- Dark/Light Mode Toggle -->
+<button id="themeToggle" class="p-2 rounded-lg bg-[#1a1a1a] border border-gray-700 hover:border-cyan-400 transition">
+  <svg id="sunIcon" class="w-6 h-6 hidden" fill="none" stroke="yellow" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+  <svg id="moonIcon" class="w-6 h-6" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+</button>
+
+</header>  <!-- Main Content Container -->  <!-- FIXED GAP BELOW STICKY HEADER -->  <div class="h-28 w-full"></div>  <!-- SUCCESS POPUP -->  <div id="successPopup"
+       class="hidden fixed top-5 right-5 bg-green-600 text-white px-5 py-3 rounded-xl shadow-lg">
+    Message Sent Successfully!
+  </div>  <!-- WHATSAPP BUTTON --><a href="https://wa.me/1234567890" target="_blank"
+class="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full shadow-xl text-white text-2xl neon"> 💬 </a>
+
+  <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10 p-8 rounded-3xl glass float border border-gray-700"><!-- CONTACT FORM -->
+<div>
+  <h2 class="text-4xl font-bold mb-8 text-cyan-400">Contact Us</h2>
+
+  <form id="contactForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="space-y-5">
+
+    <input type="hidden" name="access_key" value="e2170ecb-7b47-4ec3-8496-2cabebd3e8b9">
+
+    <div>
+      <label class="text-sm">Full Name</label>
+      <input type="text" name="name" required
+        class="w-full mt-1 p-3 bg-[#111] border border-gray-700 rounded-lg neon focus:ring-2 outline-none">
+    </div>
+
+    <div>
+      <label class="text-sm">Email</label>
+      <input type="email" name="email" required
+        class="w-full mt-1 p-3 bg-[#111] border border-gray-700 rounded-lg neon focus:ring-2 outline-none">
+    </div>
+
+    <div>
+      <label class="text-sm">Message</label>
+      <textarea name="message" rows="4" required
+        class="w-full mt-1 p-3 bg-[#111] border border-gray-700 rounded-lg neon focus:ring-2 outline-none"></textarea>
+    </div>
+
+    <button type="submit"
+      id="sendBtn"
+      class="w-full p-3 gradient-bg text-white text-lg rounded-lg font-semibold">
+      Send Message
+    </button>
+  </form>
+
+  <!-- SOCIAL ICONS -->
+  <div class="flex gap-6 mt-6 text-3xl">
+    <a href="#" class="text-gray-300 hover:text-cyan-400">🌐</a>
+    <a href="#" class="text-gray-300 hover:text-cyan-400">📸</a>
+    <a href="#" class="text-gray-300 hover:text-cyan-400">🐦</a>
+    <a href="#" class="text-gray-300 hover:text-cyan-400">📘</a>
+  </div>
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="rounded-2xl overflow-hidden shadow-xl border border-gray-700 neon">
+  <iframe
+    class="w-full h-full min-h-[380px]"
+    style="filter: grayscale(100%) invert(90%) contrast(120%);"
+    src="https://maps.google.com/maps?q=J2PH%2B559%20St%20George's%20HSS%20Thozhiyoor%2C%20Anjoor%20Kerala%20680505%2C%20India&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
+  </div>  <!-- SUCCESS POPUP + BUTTON LOADING SCRIPT -->  <script>
+    const form = document.getElementById("contactForm");
+    const popup = document.getElementById("successPopup");
+    const sendBtn = document.getElementById("sendBtn");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      sendBtn.innerText = "Sending...";
+      sendBtn.disabled = true;
+
+      const formData = new FormData(form);
+      let response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        popup.classList.remove("hidden");
+        popup.style.opacity = "1";
+        setTimeout(() => popup.style.opacity = "0", 2500);
+        setTimeout(() => popup.classList.add("hidden"), 3000);
+
+        form.reset();
+      }
+
+      sendBtn.innerText = "Send Message";
+      sendBtn.disabled = false;
+    });
+  </script>  <!-- FOOTER -->  <footer class="w-full max-w-6xl mt-10 p-6 text-center glass rounded-2xl border border-gray-800 text-gray-300">
+    <div class="flex justify-center gap-6 mb-4 text-2xl">
+      <a href="#" class="hover:text-cyan-400">📞</a>
+      <a href="#" class="hover:text-cyan-400">📷</a>
+      <a href="#" class="hover:text-cyan-400">🐦</a>
+      <a href="#" class="hover:text-cyan-400">📘</a>
+    </div>
+    <p>© Plus One students from St.George.</p>
+  </footer><!-- Dark / Light Mode Script --><script>
+const toggle = document.getElementById('themeToggle');
+const sun = document.getElementById('sunIcon');
+const moon = document.getElementById('moonIcon');
+
+function setTheme(mode){
+  if(mode==='light'){
+    document.documentElement.classList.add('light');
+    document.body.style.background = '#f5f5f5';
+    sun.classList.remove('hidden');
+    moon.classList.add('hidden');
+  } else {
+    document.documentElement.classList.remove('light');
+    document.body.style.background = ''; 
+    sun.classList.add('hidden');
+    moon.classList.remove('hidden');
+  }
+  localStorage.setItem('theme', mode);
+}
+
+const stored = localStorage.getItem('theme') || 'dark';
+setTheme(stored);
+
+toggle.addEventListener('click', () => {
+  const now = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+  setTheme(now);
+});
+</script></body>
+</html>
