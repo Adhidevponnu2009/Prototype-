@@ -11,25 +11,52 @@ function closeMenu() {
     document.getElementById("sideMenu").style.right = "-250px";
 }
 async function analyze() {
+
     const loading = document.getElementById("loading");
     const result = document.getElementById("result");
 
-    loading.style.display = "block";  // show animation
-    result.style.display = "none";    // hide result
+    loading.style.display = "block";
+    result.style.display = "none";
 
-    // Fake analyzing time
-    await new Promise(r => setTimeout(r, 2000));
+    // Fetch disease data from data.json
+    let data;
+    try {
+        const response = await fetch("data.json");
+        data = await response.json();
+    } catch (err) {
+        console.error("JSON loading error:", err);
+        loading.style.display = "none";
+        result.innerHTML = "<p style='color:red;'>Error loading data.json</p>";
+        result.style.display = "block";
+        return;
+    }
 
-    loading.style.display = "none";   // hide animation
-    result.style.display = "block";   // show result
+    // Collect user inputs
+    const plant = document.getElementById("plantName").value.toLowerCase();
+    const climate = document.getElementById("climate").value.toLowerCase();
 
-    result.innerHTML = `
-        <h3>🔍 Analysis Result</h3>
-        <p><b>Plant:</b> ${plantName.value}</p>
-        <p><b>Climate:</b> ${climate.value}</p>
-        <p><b>Disease Detected:</b> Example Disease</p>
-        <p><b>Recommended Action:</b> Spray organic treatment.</p>
-    `;
+    await new Promise(r => setTimeout(r, 1500)); // smooth delay
+
+    loading.style.display = "none";
+    result.style.display = "block";
+
+    // Check if plant + climate exists in data.json
+    if (data[plant] && data[plant][climate]) {
+        result.innerHTML = `
+            <h3>🔍 Analysis Result</h3>
+            <p><b>Plant:</b> ${plant}</p>
+            <p><b>Climate:</b> ${climate}</p>
+            <p><b>Disease Detected:</b> ${data[plant][climate].disease}</p>
+            <p><b>Recommended Action:</b> ${data[plant][climate].action}</p>
+        `;
+    } else {
+        result.innerHTML = `
+            <h3>🔍 Analysis Result</h3>
+            <p><b>Plant:</b> ${plant}</p>
+            <p><b>Climate:</b> ${climate}</p>
+            <p style="color:#ff8080;"><b>No data found in data.json</b></p>
+        `;
+    }
 }
 // Floating particles
 for (let i = 0; i < 25; i++) {
