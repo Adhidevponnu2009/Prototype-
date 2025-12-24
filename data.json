@@ -221,3 +221,108 @@
     }
   }
 }
+{
+  "rose": {
+    "cold": {"disease": "Black Spot", "action": "Remove infected leaves and use fungicide"},
+    "hot": {"disease": "Powdery Mildew", "action": "Spray neem oil weekly"},
+    "humid": {"disease": "Downy Mildew", "action": "Improve air circulation"}
+  },
+  "tomato": {
+    "cold": {"disease": "Early Blight", "action": "Apply copper fungicide"},
+    "hot": {"disease": "Leaf Curl Virus", "action": "Control whiteflies"},
+    "humid": {"disease": "Late Blight", "action": "Remove affected plants"}
+  },
+  "potato": {
+    "cold": {"disease": "Black Scurf", "action": "Use certified seeds"},
+    "hot": {"disease": "Leaf Roll", "action": "Use resistant varieties"},
+    "humid": {"disease": "Late Blight", "action": "Apply fungicide spray"}
+  },
+  "mango": {
+    "cold": {"disease": "Anthracnose", "action": "Use copper-based fungicide"},
+    "hot": {"disease": "Powdery Mildew", "action": "Sulfur spray"},
+    "humid": {"disease": "Bacterial Canker", "action": "Prune infected branches"}
+  },
+  "banana": {
+    "cold": {"disease": "Panama Disease", "action": "Improve soil drainage"},
+    "hot": {"disease": "Leaf Spot", "action": "Use potassium fertilizer"},
+    "humid": {"disease": "Sigatoka", "action": "Fungicide application"}
+  },
+
+  "apple": {
+    "cold": {"disease": "Apple Scab", "action": "Apply lime sulfur"},
+    "hot": {"disease": "Fire Blight", "action": "Remove infected shoots"},
+    "humid": {"disease": "Rust", "action": "Use fungicide spray"}
+  },
+  "grape": {
+    "cold": {"disease": "Crown Gall", "action": "Use disease-free plants"},
+    "hot": {"disease": "Leaf Blight", "action": "Apply organic fungicide"},
+    "humid": {"disease": "Downy Mildew", "action": "Improve air flow"}
+  },
+  "orange": {
+    "cold": {"disease": "Citrus Canker", "action": "Copper spray"},
+    "hot": {"disease": "Leaf Miner", "action": "Neem oil treatment"},
+    "humid": {"disease": "Greening Disease", "action": "Control insect vectors"}
+  },
+  "lemon": {
+    "cold": {"disease": "Root Rot", "action": "Avoid waterlogging"},
+    "hot": {"disease": "Leaf Curl", "action": "Use micronutrients"},
+    "humid": {"disease": "Sooty Mold", "action": "Control aphids"}
+  },
+  "papaya": {
+    "cold": {"disease": "Damping Off", "action": "Use well-drained soil"},
+    "hot": {"disease": "Papaya Ringspot Virus", "action": "Remove infected plants"},
+    "humid": {"disease": "Anthracnose", "action": "Apply fungicide"}
+  },
+
+  "guava": {
+    "cold": {"disease": "Wilt", "action": "Improve soil drainage"},
+    "hot": {"disease": "Fruit Fly", "action": "Use pheromone traps"},
+    "humid": {"disease": "Anthracnose", "action": "Spray fungicide"}
+  },
+  "chilli": {
+    "cold": {"disease": "Damping Off", "action": "Seed treatment"},
+    "hot": {"disease": "Leaf Curl", "action": "Control whiteflies"},
+    "humid": {"disease": "Anthracnose", "action": "Fungicide spray"}
+  },
+  "cucumber": {
+    "cold": {"disease": "Angular Leaf Spot", "action": "Avoid overhead watering"},
+    "hot": {"disease": "Spider Mites", "action": "Neem oil spray"},
+    "humid": {"disease": "Downy Mildew", "action": "Remove affected leaves"}
+  },
+  "carrot": {
+    "cold": {"disease": "Cavity Spot", "action": "Maintain soil pH"},
+    "hot": {"disease": "Leaf Blight", "action": "Fungicide application"},
+    "humid": {"disease": "Soft Rot", "action": "Improve drainage"}
+  },
+  "onion": {
+    "cold": {"disease": "Purple Blotch", "action": "Use resistant variety"},
+    "hot": {"disease": "Thrips", "action": "Neem oil spray"},
+    "humid": {"disease": "Downy Mildew", "action": "Fungicide spray"}
+  },
+
+  "spinach": {
+    "cold": {"disease": "White Rust", "action": "Remove infected leaves"},
+    "hot": {"disease": "Leaf Spot", "action": "Avoid overcrowding"},
+    "humid": {"disease": "Downy Mildew", "action": "Improve ventilation"}
+  },
+  "cabbage": {
+    "cold": {"disease": "Black Rot", "action": "Crop rotation"},
+    "hot": {"disease": "Diamondback Moth", "action": "Biopesticide"},
+    "humid": {"disease": "Club Root", "action": "Lime application"}
+  },
+  "cauliflower": {
+    "cold": {"disease": "Leaf Spot", "action": "Remove infected plants"},
+    "hot": {"disease": "Aphids", "action": "Soap spray"},
+    "humid": {"disease": "Soft Rot", "action": "Improve drainage"}
+  },
+  "brinjal": {
+    "cold": {"disease": "Wilt", "action": "Soil treatment"},
+    "hot": {"disease": "Shoot Borer", "action": "Remove affected shoots"},
+    "humid": {"disease": "Leaf Spot", "action": "Fungicide spray"}
+  },
+  "okra": {
+    "cold": {"disease": "Root Rot", "action": "Avoid excess water"},
+    "hot": {"disease": "Yellow Vein Mosaic", "action": "Control whiteflies"},
+    "humid": {"disease": "Leaf Spot", "action": "Neem oil"}
+  }
+}
